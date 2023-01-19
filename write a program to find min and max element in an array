@@ -1,0 +1,38 @@
+// write a program to find min and max element in an random array.
+function getminmax(a,n) // creating the function
+{
+    let max;
+    let min;
+    if(n==1)
+    {
+        max=a[0];
+        min=a[0];
+        console.log("maximum element is", max);
+        console.log("minimum element is", min);
+    }
+    if(a[0]>a[1])
+    {
+        max=a[0];
+        min=a[1];
+    }
+    else{
+        max=a[1];
+        min=a[0];
+    }
+    for(let i=2; i<n; i++)
+    {
+        if(a[i]>max)
+        {
+            max=a[i];
+        }
+        else if(a[i]<min)
+        {
+            min=a[i];
+        }
+    }
+    console.log("maximum element is", max);
+    console.log("minimum element is", min);
+}
+let a= [10, 121,345,12,130,300];
+let n=a.length;
+getminmax(a, n);  // calling the function

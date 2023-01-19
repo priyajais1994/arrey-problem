@@ -1,0 +1,20 @@
+function isdivisibleby60(n)
+{
+    var sum=0;
+    let rem;
+    while(n!=0)
+    {
+        rem= n%10;
+        sum= sum+rem;
+        n=parseInt(n/10);
+    }
+    if((rem%2==0) && (rem==0 || rem==5) && (sum%3==0))
+    {
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+console.log(isdivisibleby60(2340));
+console.log(isdivisibleby60(24));

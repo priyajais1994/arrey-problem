@@ -1,0 +1,25 @@
+function findno(num)
+{
+    
+    if(num>0)
+    {
+        console.log("it is positive no");
+
+    }
+    else if(num<0)
+    {
+        console.log("it is negative no");
+
+    }
+    else if(num==0)
+    {
+        console.log("number equal to zero");
+    }
+    else{
+        console.log("no valid number");
+    }
+}
+findno(50);
+findno(-50);
+findno(0);
+findno("hello");

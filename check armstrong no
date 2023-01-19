@@ -1,0 +1,20 @@
+function checkarmstrongno(number)
+{
+    let output=0;
+    let temp=number;
+    while(temp>0)
+    {
+        let rem= temp%10;
+        output= output+Math.pow(rem, 3);
+        temp=parseInt(temp/10);
+    }
+    if(output==number)
+    {
+        console.log("it is an armstrong no");
+    }
+    else{
+        console.log("not armstrong no");
+    }
+}
+checkarmstrongno(153);
+checkarmstrongno(166);

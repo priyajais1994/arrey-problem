@@ -1,0 +1,21 @@
+function calculatepower(base, power)
+{
+    var result=1;
+    if(power>0)
+    {
+    for(let i=1; i<=power; i++)
+    {
+        result= result*base;
+    }
+}
+else if(power<0)
+{
+    for(let i=power; i<0; i++)
+    {
+        result= result* 1/base ;
+    }
+}
+    return result;
+}
+console.log(calculatepower(5,4));
+console.log(calculatepower(2, -2));

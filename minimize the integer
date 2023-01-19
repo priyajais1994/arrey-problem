@@ -1,0 +1,39 @@
+// a person got a very large integer as his christmas present from his parents. he does not like large integer 
+// and hence decided to change a few digits of this integer and make it as small as possible.
+//but changing too many digits will make person sad . he will change at most k digit of the given integer.
+// person will perform the k changes in such a way that the final integer does not contain leading zeros.
+// print the minimum integer that person can get.
+
+function minimizetheinteger(n, k){
+
+    
+    let len= n.length;
+    if(len==0 || k==0){
+        let str= n.join("");
+        return str;
+    }
+    if(len==1){
+        return "0";
+    }
+    if(n[0] != "1")
+    {
+        n[0]="1";
+        k--
+    }
+    let i=1;
+    while(k>0 && i<len)
+    {
+        if(n[i] !="0")
+        {
+            n[i] ="0";
+            k--;
+        }
+        i++;
+    }
+    let str= n.join("");
+    return str;
+}
+let n= 2399;
+let k =2;
+let result= minimizetheinteger(n.toString().split(""), k);
+console.log(result);

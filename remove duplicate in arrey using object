@@ -1,0 +1,18 @@
+let arr=[1, 1, 2, 2, 3, 4, 5, 8,8,8];
+let obj ={}; // creating an object
+for(let i=0; i< arr.length; i++)
+{
+    let key= arr[i];
+    if(obj[key])
+    {
+        obj[key] = obj[key] +1;
+    }
+    else{
+        obj[key] =1;
+    }
+}
+console.log(obj); // print the object
+console.log(Object.keys(obj)); // print the arrey
+let number =Object.keys(obj).map((x)=> +x); // convert each element of arrey from string to number
+console.log(number);
+console.log(Object.values(obj));

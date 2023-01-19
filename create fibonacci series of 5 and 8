@@ -1,0 +1,16 @@
+function createfibonacci(prev, curr)
+{
+    console.log(prev, curr);
+    let temp;
+    let idx=3;
+    while(idx<=10)
+    {
+        temp= prev;
+        prev= curr;
+        curr+= temp;
+        console.log(curr);
+        idx++;
+    }
+}
+createfibonacci(5, 8);
+createfibonacci(0, 1);

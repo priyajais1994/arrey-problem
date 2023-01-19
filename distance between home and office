@@ -1,0 +1,16 @@
+var x=4;
+var y=20;
+ let time= y*(x+1) -5*(x+2);
+ let distance= ((y+time)/60)*x;
+ console.log(distance);
+ 
+ //using function
+
+ function finddistance(x,y)
+ {
+    let time= y*(x+1)- 5*(x+2);
+    let distance= x*((y+time)/60);
+    return distance;
+ }
+ console.log(finddistance(4, 20));
+ 

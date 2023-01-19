@@ -1,0 +1,15 @@
+function printedstar(noofrow)
+{
+    let printedstring ="";
+    for(let row=0; row< noofrow; row++)
+    {
+        for(let colum=0; colum<=row; colum++)
+        {
+            printedstring+= "*";
+        }
+        printedstring+= "\n";
+    }
+    return printedstring;
+}
+console.log(printedstar(5));
+console.log(printedstar(6));

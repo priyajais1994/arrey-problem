@@ -1,0 +1,12 @@
+var day="monday";
+if(day=="monday")
+{
+    console.log("go to office");
+}
+else if(day=="tuesday")
+{
+    console.log("go to gym");
+}
+else{
+    console.log("do whatever");
+}

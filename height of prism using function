@@ -1,0 +1,8 @@
+function heightofprism(radius, volume, perimeter)
+{
+    let semiperimeter= perimeter/2;
+    let area= radius*semiperimeter;
+    let height= volume/area;
+    return height;
+}
+console.log(heightofprism(3, 270, 15));

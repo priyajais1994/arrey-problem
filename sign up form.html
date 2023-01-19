@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            sign up form
+        </title>
+    </head>
+    <body>
+        <center>
+            <h1>sign up form</h1>
+                
+            <p>please fill this form to create your account</p>
+        </center>
+        <center>
+            <form >
+                <!-- name input box-->
+                <label for="name">enter your full name</label>
+                <input type="text" id="name" name="name">
+
+                <!-- gender-->
+
+                <br><br>
+                <label for="gender"> select your gender</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male"> male </label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">female</label>
+                <!--user name-->
+                <br><br>
+                <label for="username">enter your user name</label>
+                <input type="text" id="user" name="username">
+
+                <!-- email address-->
+                <br><br>
+                <label for="email">enter your email address</label>
+                <input type="text" id="email" name="email">
+
+                <!--password-->
+                <br><br>
+                <label for="password">enter your password</label>
+                <input type="text" id="pwd" name="password">
+
+                <!--checkbox-->
+                <br><br>
+                <label for="about relevel">how did you get to know about us?</label>
+                <input type="checkbox" id="gadds" name="about relevel" value="through google ads">
+                <label for="gadds">through google ads</label>
+
+                <input type="checkbox" id="insta" name="about relevel" value="through instagram">
+                <label for="insta">through instagram</label>
+
+                <input type="checkbox" id="frnd" name="about relevel" value="through friends">
+                <label for="frnd">through friends</label>
+
+                <input type="checkbox" id="other" name="about relevel" value="other means">
+                <label for="other">other means</label>
+                <!--create your account button-->
+                <br><br>
+                <input type="button" id="btn" name="submit" value="create your account" onclick="displaydata()">
+                <input type="button" id="btn"  value="cancel">
+ </form>
+ </center>
+ <script>
+    function displaydata()
+    {
+                var name= "not specified";
+                var gender= "not specified";
+                var username= "not specified";
+                var email="not specified";
+                var password= "not specified";
+                if(document.getElementById("name").value != null && document.getElementById("name").value !="")
+                {
+                    name=document.getElementById("name").value;
+
+                }
+                if(document.getElementById("male").checked || document.getElementById("female").checked)
+                {
+                    gender= (document.getElementById("male").checked) ? document.getElementById("male").value: document.getElementById("female").value;
+
+                }
+                if(document.getElementById("username").value !=""){
+                    username= document.getElementById("username").value;
+                }
+                if(document.getElementById("email").value !="")
+                {
+                    email= document.getElementById("email").value;
+                }
+                if(document.getElementById("password").value !="")
+                {
+                    password = document.getElementById("password").value;
+                }
+                
+                var output =`name is ${name}, gender is ${gender}, username is ${username}, email is ${email}, password is ${password}`;
+                alert(output);
+                
+            }
+        </script>
+    </body>
+</html>
+    

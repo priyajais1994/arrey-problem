@@ -1,0 +1,9 @@
+var day="monday";
+switch(day)
+{
+    case "monday": console.log("go to office");
+    break;
+
+    case "tuesday": console.log("go to gym");
+    break;
+}

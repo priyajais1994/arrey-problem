@@ -1,0 +1,21 @@
+function secondlargest(arr)
+{
+    var a= arr[0];
+    var b= arr[1];
+    var c= arr[2];
+    var l;
+    if((a>b&&b>c) ||(c>b&&b>a))
+    {
+        l=b;
+    }
+    else if((b>a&&a>c) ||(c>a&&a>b))
+    {
+        l=a;
+    }
+    else{
+        l=c;
+    }
+    console.log(l);
+}
+let arr=[400, 140, 110];
+secondlargest(arr);

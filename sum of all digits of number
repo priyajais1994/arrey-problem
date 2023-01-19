@@ -1,0 +1,12 @@
+function sumofdigitofno(number)
+{
+    var output=0;
+    while(number!=0)
+    {
+        output= output+number%10;
+        number= parseInt(number/10);
+    }
+    return output;
+}
+console.log(sumofdigitofno(123));
+console.log(sumofdigitofno(567));

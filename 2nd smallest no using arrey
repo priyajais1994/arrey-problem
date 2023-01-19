@@ -1,0 +1,21 @@
+let t=3;
+for(t=3; t>0; t--)
+{
+    let arr = prompt("enter arrey element");
+    var a= arr[0];
+    var b= arr[1];
+    var c= arr[2];
+    var l;
+    if((a>b && b>c) || (c>b && b>a))
+    {
+        l=b;
+    }
+    else if((c>a && a>b) ||(b>a && a>c))
+    {
+        l=a;
+    }
+    else{
+        l=c;
+    }
+    console.log(l);
+}

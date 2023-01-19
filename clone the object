@@ -1,0 +1,34 @@
+// program to clone the object and change the property and  then iterate the arrey of objects using
+//inbuilt function and to console the object property and frame a meaningful sentence.
+const movie= [{
+    name: "spiderman",
+    genre: "action",
+    collection: "100cr",
+    hit: function(){
+        return `${this.name} is hit`;
+    },
+    flop: function(){
+        return `${this.name} is flop`;
+    },
+},
+{
+    name:"batman",
+    genre: "action",
+    collection: "120cr",
+    hit: function(){
+        return `${this.name} is hit`;
+    },
+    flop: function(){
+        return `${this.name} is flop`;
+    },
+}]
+// clone the object movie by using object.assign inbuilt function and store in a variable called clonemovie
+const clonemovie= Object.assign({}, movie);
+console.log(clonemovie);
+for([key, value] of Object.entries(clonemovie))
+{
+    console.log(`movie ${value.hit()}`);
+}
+
+
+

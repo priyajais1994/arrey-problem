@@ -1,0 +1,14 @@
+function attendance(m, n)
+{
+
+if(n>= Math.ceil(0.75*m))
+{
+    console.log(0);
+}
+else{
+    let days= Math.ceil(0.75*m) -n;
+
+console.log(days);
+}
+}
+attendance(7, 6);

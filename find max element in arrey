@@ -1,0 +1,12 @@
+// find maximum element in an arrey without using inbuilt function
+let arr= [10, 50, 40, 30, 25];
+let max= arr[0];
+// iterate over each element of an arrey from index 1 to last index
+for(let i=1; i< arr.length; i++)
+{
+    if(arr[i]> max)
+    {
+        max= arr[i];
+    }
+}
+console.log(max);

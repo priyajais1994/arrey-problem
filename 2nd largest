@@ -1,0 +1,17 @@
+var a=25, b=15,c=10;
+if((a>b && b>c) || (c>b&& b>a))
+{
+    console.log(b);
+}
+else if((b>a && a>c) || (c>a && a>b))
+{
+    console.log(a);
+}
+else
+{
+    console.log(c);
+}
+
+
+
+    

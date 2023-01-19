@@ -1,0 +1,14 @@
+let arr= [10, 54, 67,10, 46, 54, 67];
+let sortarr= arr.sort(); //sorting the arrey in ascending order
+for(let i=0; i<sortarr.length; i++) // iterate each element of sorted arrey through loop
+{
+    if(sortarr[i] == sortarr[i+1])
+    {
+        delete sortarr[i];
+    }
+    else{
+        continue;
+    }
+}
+let final= sortarr.filter((x)=> x!== undefined);
+console.log(final);

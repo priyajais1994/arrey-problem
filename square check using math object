@@ -1,0 +1,13 @@
+function isperfectsquare(n)
+{
+    var x= Math.ceil(Math.sqrt(n));  // ceil and sqrt is function of math object
+    if(x*x==n)
+    {
+        console.log("perfect square");
+    }
+    else{
+        console.log("not perfect square");
+    }
+}
+isperfectsquare(49);
+isperfectsquare(38);

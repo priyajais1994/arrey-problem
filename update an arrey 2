@@ -1,0 +1,19 @@
+// keeping 1st and last element unchanged
+function updatedarray(array)
+{
+    let finalarr= new Array(array.length);
+    finalarr[0]= array[0];
+    finalarr[finalarr.length-1] = array[array.length-1];
+    // i for input arrey index and j for final arrey index
+    for(let i=1; i<=array.length-2; i++)
+    {
+        for(let j=1; j<=i; j++)
+        {
+            finalarr[j]= array[j-1] * array[j+1];
+        }
+    }
+    return finalarr;
+
+}
+let inputarray= [1,4, 5, 3, 9, 5];
+console.log(updatedarray(inputarray));

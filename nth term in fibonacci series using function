@@ -1,0 +1,25 @@
+function fibonacci(n)
+{
+    let prev=0;
+    let current =1;
+    let temp;
+    if(n==1)
+    {
+        return prev;
+    }
+    else if(n==2)
+    {
+        return current;
+    }
+    else{
+        for(let idx=3; idx<=n; idx++)
+        {
+            temp=prev;
+            prev= current;
+            current+=temp;
+        }
+    }
+    return current;
+}
+console.log(fibonacci(5));
+console.log(fibonacci(24));

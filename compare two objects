@@ -1,0 +1,30 @@
+// write a program to compare objects without using any inbuilt function
+// define 1st object
+let obj1= {
+    name: "john",
+    age: 23,
+    degree: "cs",
+};
+// define 2nd object
+let obj2= {
+    age: 23,
+    degree:"cs",
+};
+// define function check
+function check(obj1, obj2)
+{
+    // iterate obj2 using for in loop
+    for(key in obj2)
+    {
+        // check if both object do not have equal value of same key
+        if(obj1[key] !== obj2[key])
+        {
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+}
+// call the function
+console.log(check(obj1, obj2));

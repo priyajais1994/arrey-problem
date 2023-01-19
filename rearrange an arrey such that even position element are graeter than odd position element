@@ -1,0 +1,26 @@
+// rearrange an array such that even position elements are greater than odd positioned element
+function rearrangearray(a, n)
+{
+    a.sort(); // sort an arrey in ascending order
+    console.log(a);
+    let result= []; // create a new arrey result which will store updated arrey
+    let p=0, q=n-1; // p, q are variable which is going to keep track of start and last index 
+    for(let i=0; i<n; i++ )
+    {
+        if((i+1) %2==0) // assign even index with maximum element
+        {
+            result[i]= a[q--];
+
+        }
+        else{
+            result[i]= a[p++]; // assign odd index with remaining element
+        }
+    }
+    return result;
+}
+let a= [1, 3, 2, 2, 5];
+let n= a.length;
+console.log(rearrangearray(a, n));
+
+
+

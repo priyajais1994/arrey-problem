@@ -1,0 +1,11 @@
+function votingage(age)
+{
+if(age>18)
+{
+    console.log(true);
+}
+else{
+    console.log(false);
+}
+}
+votingage(25);

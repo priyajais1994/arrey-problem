@@ -1,0 +1,32 @@
+let car= [{
+    colour: "black",
+    speed: "120kmph",
+    brand: "audi",
+    start: function()
+    {
+        console.log("car started");
+    },
+    stop: function()
+    {
+        console.log("car stopped");
+    },
+},
+{
+    colour: "red",
+    speed: "100kmph",
+    brand: "bmw",
+    start: function()
+    {
+        console.log("car started");
+    },
+    stop: function()
+    {
+        console.log("car stopped");
+    },
+},
+]
+for([key, value] of Object.entries(car))
+{
+    console.log(`my car is ${value.brand} and colour is${value.colour}`);
+}
+

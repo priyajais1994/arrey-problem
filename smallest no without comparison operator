@@ -1,0 +1,13 @@
+function  checksmallest(a, b , c)
+{
+    let d=0;   //another variable to store smallest no
+while(a&&b&&c)
+{
+    a--;
+    b--;
+    c--;
+    d++
+}
+return d;
+}
+console.log(checksmallest(12, 44, 2));

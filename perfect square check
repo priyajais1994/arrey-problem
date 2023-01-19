@@ -1,0 +1,11 @@
+function perfectsquare(num)
+{
+    if(Math.sqrt(num) == Math.round(math.sqrt(num)))
+    {
+        console.log("perfect square");
+    }
+    else{
+        console.log("not perfect square");
+    }
+}
+perfectsquare(49);

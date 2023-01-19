@@ -1,0 +1,11 @@
+let arr= [5, 4, 3, 6, 4, 2];
+let smallestele = arr[0]; // assign 1st array value in smallestele variable
+// iterate over each element of an array from index 1 and compare with smallestele 
+for(let i=1; i< arr.length; i++)
+{
+    if(arr[i]< smallestele)
+    {
+        smallestele= arr[i];
+    }
+}
+console.log("smallest element in an arrey is", smallestele);

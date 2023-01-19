@@ -1,0 +1,18 @@
+// write a function which accept an arrey of integer and update every element with the
+// multiplication of previous and current element
+function updatedarray(array)
+{
+    let finalarr= new Array(array.length);
+    finalarr[0] = array[0];
+    // i for input arrey index and j for final arrey index
+    for(let i=1; i<=array.length-1; i++)
+    {
+        for(let j=1; j<=i; j++)
+        {
+            finalarr[j]= array[j] * array[j-1];
+        }
+    }
+    return finalarr;
+}
+let inputarray= [1, 4, 5, 3, 9, 5];
+console.log(updatedarray(inputarray));

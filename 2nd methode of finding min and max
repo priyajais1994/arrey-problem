@@ -1,0 +1,6 @@
+let a=[10,121,345,12,130,300];
+let n= a.length;
+let sortarray= a.sort(); // sort the array in ascending order
+console.log(sortarray);
+console.log("maximum element is", sortarray[n-1]);
+console.log("minimum element is", sortarray[0]);

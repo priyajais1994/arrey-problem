@@ -1,0 +1,9 @@
+for(let i=4; i>0; i--)
+{
+    var str= "";
+    for(let j=1; j<=i; j++)
+    {
+        str= str+i;
+    }
+    console.log(str);
+}

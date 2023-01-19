@@ -1,0 +1,7 @@
+let i=1;
+do{
+    let j=3*i;
+    console.log(j);
+    i++;
+}
+while(i<=10)

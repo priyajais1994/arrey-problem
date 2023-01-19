@@ -1,0 +1,26 @@
+// write a program to move all negative no to the end and positive to the begining of the array without using any 
+// predifined sorting methode.
+function rearrangearray(a, n)
+{
+    let start=0; // start is going to store the start index of an array
+    let end= n-1; // end is going to store the end index of an array
+    let swap; // swap is going to swap two value
+    while(start<=end)
+    {
+        if(a[start]>=0)
+        {
+            start++;
+        }
+        else{
+            swap= a[end];
+            a[end]=a[start];
+            a[start]=swap;
+            end--;
+
+        }
+    }
+    return a;
+}
+let a= [-1, 2, -3, 4, 5, 6, -7, 8, 9];
+let n= a.length;
+console.log(rearrangearray(a,n));

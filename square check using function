@@ -1,0 +1,20 @@
+function isperfectsquare(x)
+{
+    for(let num=1; num<x; num++)
+    {
+        if(num*num==x && x/num ==num)
+        {
+            console.log("perfect square");
+        }
+        
+        
+        else{
+            continue;
+            console.log("not perfect square");
+        }
+    }
+
+    
+}
+
+isperfectsquare(49);

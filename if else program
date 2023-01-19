@@ -1,0 +1,17 @@
+var value=12000;
+if(value>5000 && value<10000)
+{
+    console.log("discount 5%");
+
+}
+else if(value>10000 && value<15000)
+{
+    console.log("discount10%");
+}
+else if(value>15000 && value<20000)
+{
+    console.log("discount 15%");
+}
+else{
+    console.log("discount 20%");
+}

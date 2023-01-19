@@ -1,0 +1,18 @@
+function children(temp)
+{
+    var raining =false;
+    if((temp>=20 && temp<=25) && raining==false)
+    {
+        console.log("go out in park");
+    }
+    else if((temp>=18 && temp<=20)&& raining==true)
+    {
+        console.log("play in school");
+    }
+    else{
+        console.log("go to home and stay there");
+    }
+}
+children(22);
+children(19);
+children(27);

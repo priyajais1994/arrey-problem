@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            survey form app
+        </title>
+    </head>
+    <body>
+        <center>
+            <h2>
+                survey form app
+            </h2>
+        </center>
+        <center>
+            <form >
+                <!--name input box-->
+                <label for="name">enter your name</label>
+                <input type="text" id="name" name="name">
+            
+                <!--gender radio button-->
+                <br><br>
+                <label for="gender">gender</label>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">female</label>
+                <!-- age dropdown-->
+                <br><br>
+                <label for="age"> age</label>
+                <select id="age" name="age">
+                    <option value="under 10">under 10 years</option>
+                    <option value="between 10 to 25">between 10 to 25 years</option>
+                    <option value="between 25 to 60">between 25 to 60 years</option>
+                    <option value="above 60">above 60 years</option>
+                </select>
+
+                <!--countries visited checkbox-->
+                <br><br>
+                <label for="countriesvisited">select the countries you have visited</label>
+                <input type="checkbox" id="swis" name="countriesvisited" value="switzerland">
+                <label for="swis">switzerland</label>
+                <input type="checkbox" id="in" name="countriesvisited" value="india">
+                <label for="in">india</label>
+                <input type="checkbox" id="jp" name="countriesvisited" value="japan">
+                <label for="jp">japan</label>
+
+                <!--feedback text area-->
+                <br><br>
+                <label for="fb">please enter your feedback</label>
+                <textarea id="fb" name="feedback" rows="4" cols="50"></textarea>
+
+                <!--submit button-->
+                <br><br>
+                <input type="button" id="btn" name="submit" value="submit" onclick="displaydata()">
+                <input type="button" id="btn"  value="cancel">
+
+                
+            </form>
+        </center>
+        <script>
+
+            function displaydata()
+            {
+                var name= "not specified";
+                var gender= "not specified";
+                var age= "not specified";
+                var countriesvisited="not specified";
+                var feedback= "not specified";
+                if(document.getElementById("name").value != null && document.getElementById("name").value !="")
+                {
+                    name=document.getElementById("name").value;
+
+                }
+                if(document.getElementById("male").checked || document.getElementById("female").checked)
+                {
+                    gender= (document.getElementById("male").checked) ? document.getElementById("male").value: document.getElementById("female").value;
+
+                }
+                if(document.getElementById("age").value !=""){
+                    age= document.getElementById("age").value;
+                }
+                var output =`name is ${name}, gender is ${gender}, age is ${age}`;
+                alert(output);
+                
+            }
+        </script>
+    </body>
+</html>

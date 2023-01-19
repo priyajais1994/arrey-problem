@@ -1,0 +1,12 @@
+// sorting a random arrey in descending order by using inbuilt function
+let arr= [2, 5, 3, 4, 1];
+let sortarr= arr.sort((a,b)=> b-a);
+console.log(sortarr);
+let largestno= sortarr[0];
+console.log(largestno);
+let secondlargestno= sortarr[1];
+console.log(secondlargestno);
+let smallestno =sortarr[sortarr.length-1];
+console.log(smallestno);
+let secondsmallestno = sortarr[sortarr.length-2];
+console.log(secondsmallestno);

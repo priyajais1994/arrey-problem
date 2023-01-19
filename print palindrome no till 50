@@ -1,0 +1,14 @@
+
+for(let i=1; i<=50; i++)
+{
+    let reverse="";
+    let str= i.toString();  // converting no to string
+    for(let j=(str.length-1); j>=0; j--)
+    {
+        reverse= reverse+ str[j];
+    }
+    if(reverse== str)
+    {
+        console.log(+reverse);  // converting string to no then print
+    }
+}

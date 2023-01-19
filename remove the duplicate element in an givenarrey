@@ -1,0 +1,18 @@
+let arr= ["a", "b", "c", "a", "c", "d","a"];
+let obj= {}; // creating an object to store arrey value and their occurence
+// iterate over arrey element
+for(let i=0; i<arr.length; i++)
+{
+    let key =arr[i];
+    if(obj[key])
+    {
+        obj[key]= obj[key] +1;
+    }
+    else
+    {
+        obj[key] =1;
+    }
+}
+console.log(obj);
+console.log(Object.keys(obj));
+console.log(Object.values(obj));

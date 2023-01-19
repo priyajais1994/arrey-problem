@@ -1,0 +1,9 @@
+function noofbricks(length, height, thickness)
+{
+    let volume_wall=  Math.ceil((85/100) *(length*height*thickness)* (100 *100*100));
+    let dimension_bricks = 24*12*8;
+
+    let bricks= volume_wall/dimension_bricks
+    return bricks;
+}
+console.log(noofbricks(24, 8, 0.6));

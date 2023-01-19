@@ -1,0 +1,8 @@
+function findresult(marks)
+{
+    (marks>=40)? console.log("pass"): console.log("fail");
+
+}
+findresult(40);
+findresult(30);
+findresult(60);

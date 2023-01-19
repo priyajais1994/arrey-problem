@@ -1,0 +1,19 @@
+// we have to find out max gap difference between adjacent element in a sorted arrey. 
+// given arrey is random arrey.
+// here t(c) = o(n-1) which is o(n) and s(c) = o(1) which is constant
+function maxgap(arr)
+{
+    if(arr.length<2)
+    {
+        return 0;
+    }
+    arr.sort((a,b)=>a-b);
+    let result = 0;
+    for(let i=0; i<arr.length-1; i++)
+    {
+        result = Math.max((arr[i+1] - arr[i]), result);
+    }
+    return result;
+}
+let arr= [2,10,12,13,1,5,6];
+console.log(maxgap(arr));

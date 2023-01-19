@@ -1,0 +1,20 @@
+// program to find the frequency of all character in given string
+let str= "occurence";
+let arr= str.split(""); // split the string and ruturn an arrey of letter
+console.log(arr);
+let obj={}; // creating an object to store letter of string and their freq
+// iterate over each element of an arrey
+for(let i=0; i<arr.length; i++)
+{
+    let key= arr[i];
+    if(obj[key])
+    {
+        obj[key] =obj[key] +1;
+    }
+    else{
+        obj[key] =1;
+    }
+}
+console.log(obj);
+console.log(Object.keys(obj));
+console.log(Object.values(obj));

@@ -1,0 +1,27 @@
+
+const movie={
+    name: "spiderman",
+    genre: "action",
+    theatre :{
+        imax: "chennai",
+        pvr: "mumbai",
+    },
+    collection: "100cr",
+    hit: function(){
+        console.log("spiderman is hit");
+    },
+    flop : function(){
+        console.log("spiderman is flop");
+    },
+};
+
+
+const {name, genre, collection, flop, hit, theatre} = movie;
+const {imax, pvr} = theatre;
+console.log(hit());
+console.log(flop());
+console.log(movie.name);
+console.log(movie.genre);
+console.log(movie.collection);
+console.log(movie.theatre);
+console.log("theatre location are", imax, "and", pvr);

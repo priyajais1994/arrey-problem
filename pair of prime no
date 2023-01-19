@@ -1,0 +1,25 @@
+function isprime(n)
+{
+    for(let i=2; i<=Math.sqrt(n); i++)
+    {
+        if(n%i ==0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+function sumprime(n)
+{
+    
+    for(let i=2; i<=n/2; i++)
+    {
+        if(isprime(i) && isprime(n-i) )
+        {
+            console.log(i, (n-i));
+        }
+    }
+}
+sumprime(15);
+sumprime(4);
+sumprime(20);

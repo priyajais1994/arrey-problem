@@ -1,0 +1,21 @@
+function addition(num1, num2)
+{
+    let sum= num1+num2;
+    console.log("sum is" +sum);
+    return sum;
+    
+}
+addition(4,5)
+function checksum(sum)
+{
+    if(sum>10)
+    {
+        console.log("sum is greater than 10");
+
+    }
+    else{
+        console.log("not greater than 10");
+    }
+    
+}
+checksum(9)

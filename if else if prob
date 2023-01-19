@@ -1,0 +1,24 @@
+var value=1;
+if(value==1)
+{
+    console.log("one");
+}
+else if(value==2)
+{
+    console.log("two");
+}
+else if(value==3)
+{
+    console.log("three");
+}
+// doing this by switch case
+var value=1;
+switch(value)
+{
+    case 1: console.log("one");
+    break;
+    case 2: console.log("two");
+    break;
+    case 3: console.log("three");
+}
+

@@ -1,0 +1,27 @@
+// write a methode that accept an arrey of integers and update every element with multiplication of 
+// previous and next element.
+// 1st element is replaced by product of 1st and 2nd element
+// last element is replaced by product of last and 2nd last element.
+function updatearray(a,n)
+{
+    // store the current value of a[0] and update it
+    let prev= a[0];
+    a[0]= a[0]*a[1];
+    // traverse tha array from 2nd index to 2nd last index
+    for(let i=1; i<n-1; i++)
+    {
+        // store the current value of a[i]
+        let curr= a[i];
+        // update the current value with product of previous and next element
+        a[i]= prev*a[i+1];
+        // update the previous value
+        prev= curr;
+
+    }
+    // update the last element of an arrey
+    a[n-1] = prev* a[n-1];
+    return a;
+}
+let a= [2, 3, 4, 5, 6];
+let n= a.length;
+console.log(updatearray(a,n));

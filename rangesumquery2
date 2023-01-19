@@ -1,0 +1,41 @@
+// amy has an array a of q ,l ,r integer . anne gives her q queries. each queries consist of two integers x and y.
+//anne wants amy to check if there exists at least 1 subsequence in a, such that the sum of subsequence 
+// lies between x and y (both inclusive).
+// print output for each query : print 1 if there exists a requred subsequence otherwise print 0.
+
+function rangesumquery2(q, l, r, quries)
+{
+    const a= [];
+    for (let i=1; i<=r; i++)
+    {
+        a.push(i);
+    }
+    const result = [];
+    for(const query of quries)
+    {
+        const[ x, y] = query;
+        let found = false;
+    
+        for(let i=0; i<a.length; i++)
+        {
+            let sum =0;
+            for(let j=i; j<a.length; j++)
+            {
+                sum= sum+ a[j];
+                if(sum >=x && sum<=y)
+                {
+                    found= true; 
+                    break;
+                }
+            }
+            if(found)
+            {
+                break;
+            }
+        }
+            result.push(found?1:0);
+        }
+        return result;
+
+}
+console.log(rangesumquery2(2,1, 3,[ [6,7], [9,9],]));

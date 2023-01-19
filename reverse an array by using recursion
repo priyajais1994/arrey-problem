@@ -1,0 +1,25 @@
+function reversearray(arr, start, end)
+{
+    let swap;
+    if(start>=end) // base condition for recursion
+    {
+        return;
+    }
+    swap= arr[start];
+    arr[start]= arr[end];
+    arr[end]= swap;
+    reversearray(arr, start+1, end-1); // recursively call reverse array function that is recursion
+}
+// print the reverse array
+function printarray(arr, n)
+{
+    for(let i=0; i<=n-1; i++)
+    {
+        console.log(arr[i]);
+    }
+}
+let arr= [1,2,3,4,5,6];
+let n= arr.length;
+reversearray(arr, 0, n-1);
+console.log("reversed array is");
+printarray(arr, n);

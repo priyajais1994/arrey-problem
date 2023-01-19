@@ -1,0 +1,17 @@
+// given an array denoting the cost of stock on different days. your task is to find the maximum profit
+// which can be earned after buying or selling the stock.
+function maxprofit(prices, n)
+{
+    let maxprofit=0;
+    for(let i=1; i<=n-1; i++)
+    {
+        if(prices[i]>prices[i-1])
+        {
+            maxprofit+= prices[i]- prices[i-1];
+        }
+    }
+    return maxprofit;
+}
+let prices= [200, 280, 360, 410,140, 535, 695];
+let n= prices.length;
+console.log(maxprofit(prices,n));
